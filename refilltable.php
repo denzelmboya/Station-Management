@@ -11,8 +11,8 @@
 <?php
 $servername = "localhost";
 $dbusername = "root";
-$dbpassword = "33587279Magic6666";
-$dbname = "petroldb";
+$dbpassword = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
