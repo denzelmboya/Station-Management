@@ -1,8 +1,8 @@
 <?php
 $servername="localhost";
 $dbusername="root";
-$dbpassword="33587279Magic6666";
-$dbname="petroldb";
+$dbpassword="";
+$dbname="";
 
 $tank_id = $_POST ['tank_id'];
 $initial_vol = $_POST ['initial_vol'];
