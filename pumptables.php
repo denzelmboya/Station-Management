@@ -11,7 +11,7 @@
 <?php
 $servername = "localhost";
 $dbusername = "root";
-$dbpassword = "33587279Magic6666";
+$dbpassword = "";
 $dbname = "petroldb";
 
 // Create connection
