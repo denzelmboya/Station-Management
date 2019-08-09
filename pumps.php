@@ -1,8 +1,8 @@
 <?php
 $servername="localhost";
 $dbusername="root";
-$dbpassword="33587279Magic6666";
-$dbname="petroldb";
+$dbpassword="";
+$dbname="";
 
 $pumpname = $_POST ['pumpname'];
 $tank_id = $_POST ['tank_id'];
