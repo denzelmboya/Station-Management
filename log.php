@@ -2,8 +2,8 @@
 session_start();
 $servername="localhost";
 $dbusername="root";
-$dbpassword="33587279Magic6666";
-$dbname="petroldb";
+$dbpassword="";
+$dbname="";
 
 $conn = new mysqli($servername,$dbusername,$dbpassword,$dbname);
 	
