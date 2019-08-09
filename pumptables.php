@@ -12,7 +12,7 @@
 $servername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
-$dbname = "petroldb";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
