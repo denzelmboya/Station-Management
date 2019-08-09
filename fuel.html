@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fuel</title>
+</head>
+<body bgcolor="#FAFAD2">
+<div class="station" style="font-family:Brush Script Std; font-size:500%;">Station</div>
+<h3>fuel type</h3>
+<div class="container">
+  <form method="post" action="fuel.php">
+	<label for="fuel_type_name">Fuel Type Name</label>
+    <input type="text" id="fuel_type_name" name="fuel_type_name" placeholder="Enter Fuel Type Name.." required>
+	
+	<label for="description">Subject</label>
+    <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" name="submit">
+  </form>
+</div>
+  <button class="button" type="" onclick="window.location.href = 'index.php?page=fuel';">Fuel Types</button>
+  <button class="button" onclick="window.location.href = 'index.php';">Home</button>
+</body>
+</html>

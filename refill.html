@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3 {
+  position: relative;
+  left: 170px;
+}
+button{
+  padding: 10px 6px;
+  font-size: 14px;
+  position: relative;
+  left: 430px;
+  bottom: 54px;
+  cursor: pointer;
+}
+</style>
+<title>Refill</title>
+</head>
+<body bgcolor="	#FAFAD2">
+<div class="station" style="font-family:Brush Script Std; font-size:500%;">Fuel</div>
+<h3>refill request form</h3>
+<div class="container">
+  <form method="post" action="refill.php">
+    <label for="tank_id">Tank ID</label>
+    <input type="text" id="tank_id" name="tank_id" placeholder="Enter Tank ID.." required>
+
+    <label for="fuel_balance">Fuel Balance</label>
+    <input type="text" id="fuel_balance" name="fuel_balance" placeholder="Enter Fuel Balance.." required>
+	
+	<label for="refill_amount">Refill Amount</label>
+    <input type="text" id="refill_amount" name="refill_amount" placeholder="Enter Fuel Amount.." required>
+
+    <label for="supplier">Supplier</label>
+    <input type="text" id="supplier" name="supplier" placeholder="Enter Supplier.." required>
+	
+	<label for="depot_location">Depot Location</label>
+    <input type="text" id="depot_location" name="depot_location" placeholder="Enter Depot Location.." required>
+	
+	<label for="supplier_contact">Supplier Contact</label>
+    <input type="text" id="supplier_contact" name="supplier_contact" placeholder="Enter Supplier Contact.." required>
+	
+	<label for="ship_method">Ship Method</label>
+    <input type="text" id="ship_method" name="ship_method" placeholder="Enter Shipping Method.." required>
+	
+	<label for="date">Date</label>
+    <input type="date" id="date" name="date" placeholder="Enter Date.." required>
+	
+	<label for="time">Time</label>
+    <input type="time" id="time" name="time" placeholder="Enter Time.." required>
+
+    <input type="submit" value="Submit" name="submit">
+  </form></div>
+      <button onclick="window.location.href = 'index.php?page=refill';">Refill Details</button>
+  <button onclick="window.location.href = 'index.php';">Home</button>
+</body>
+</html>

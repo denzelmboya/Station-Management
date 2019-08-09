@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Station Pumps</title>
+</head>
+<body bgcolor="#FAFAD2">
+<div class="station" style="font-family:Brush Script Std; font-size:500%;">Station</div>
+<h3>Pumps Form</h3>
+<div class="container">
+  <form method="POST" action="pumps.php">
+    <label for="pumpname">Pump Name</label>
+    <input type="text" id="pumpname" name="pumpname" placeholder="Enter Pump Name.." required>
+
+    <label for="tank_id">Tank ID</label>
+    <input type="text" id="tank_id" name="tank_id" placeholder="Enter Tank ID.." required>
+	
+	<label for="description">Subject</label>
+    <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" name="submit" onClick=\"return confirm('Are you sure you want to delete?')\">
+  </form></div>
+    <button class="button" type="" onclick="window.location.href = 'index.php?page=pumps';">Station Pumps</button>
+  <button class="button" onclick="window.location.href = 'index.php';">Home</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button{
+  padding: 10px 6px;
+  font-size: 14px;
+  position: relative;
+  left: 430px;
+  bottom: 54px;
+  cursor: pointer;
+}
+</style>
+<title>Attendants</title>
+</head>
+<body bgcolor="	#FAFAD2">
+<div class="station" style="font-family:Brush Script Std; font-size:500%;">Station</div>
+<h3>attendants form</h3>
+<div class="container">
+  <form method="post" action="attendants.php">
+    
+	<label for="staff_id">Staff ID</label>
+    <input type="text" id="staff_id" name="staff_id" placeholder="Enter Staff Pump ID.." required>
+	
+	<label for="pump_id">Pump ID</label>
+    <input type="text" id="pump_id" name="pump_id" placeholder="Enter Pump ID.." required>
+	
+	<label for="date">Date</label>
+    <input type="date" id="date" name="date" placeholder="Enter Date.." required>
+	
+	<label for="time">Time</label>
+    <input type="time" id="time" name="time" placeholder="Enter Time.." required>
+
+    <input type="submit" value="Submit" name="submit">
+  </form></div>
+        <button onclick="window.location.href = 'index.php?page=attendants';">Staff Register</button>
+  <button onclick="window.location.href = 'index.php';">Home</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3 {
+  position: relative;
+  left: 170px;
+}
+button{
+  padding: 10px 6px;
+  font-size: 14px;
+  position: relative;
+  left: 430px;
+  bottom: 54px;
+  cursor: pointer;
+}
+</style>
+<title>Readings</title>
+</head>
+<body bgcolor="	#FAFAD2">
+<div class="station" style="font-family:Brush Script Std; font-size:500%;">Fuel</div>
+<h3>readings form</h3>
+<div class="container">
+  <form method="post" action="readings.php">
+    <label for="tank_id">Tank ID</label>
+    <input type="text" id="tank_id" name="tank_id" placeholder="Enter Tank ID.." required>
+
+    <label for="initial_vol">Initial Volume</label>
+    <input type="text" id="initial_vol" name="initial_vol" placeholder="Enter Initial Volume.." required>
+	
+	<label for="currentvol">Current Volume</label>
+    <input type="text" id="currentvol" name="currentvol" placeholder="Enter Current Volume.." required>
+
+	<label for="staff_id">Staff ID</label>
+    <input type="text" id="staff_id" name="staff_id" placeholder="Enter Staff Pump ID.." required>
+	
+	<label for="date">Date</label>
+    <input type="date" id="date" name="date" placeholder="Enter Date.." required>
+	
+	<label for="time">Time</label>
+    <input type="time" id="time" name="time" placeholder="Enter Time.." required>
+
+    <input type="submit" value="Submit" name="submit">
+  </form></div>
+        <button onclick="window.location.href = 'index.php?page=readingsform';">Tank Readings</button>
+  <button onclick="window.location.href = 'index.php';">Home</button>
+</body>
+</html>

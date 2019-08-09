@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+h4{
+text-shadow: 2px 2px 20px gold;
+position: relative;
+left: 35%;
+font-size: 30px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container123 {
+  padding: 16px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<title>Sign Up</title>
+<body>
+<form method="post" action="signup.php" style="border:1px solid #ccc">
+  <div class="container123">
+    <h4>Account Registration Form</h4>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+	
+	<label for="position"><b>Position</b></label>
+    <input type="text" placeholder="Enter Position" name="position" required>
+	
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+	
+	<label for="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+	
+	<label for="nationalid"><b>National ID</b></label>
+    <input type="text" placeholder="Enter Natinal ID" name="nationalid" required>
+	
+	<label for="phone"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <label for="pswrepeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn"><a style="text-decoration:none" href="index.php">Cancel</a></button>
+      <button type="submit" class="signupbtn" name="signup" >Sign Up</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
